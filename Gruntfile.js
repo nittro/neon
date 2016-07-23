@@ -1,9 +1,6 @@
 module.exports = function (grunt) {
 
-    var files = [
-        'src/js/Nittro/Utils/Tokenizer.js',
-        'src/js/Nittro/Neon/Neon.js'
-    ];
+    var files = grunt.file.readJSON('nittro.json').files;
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -15,7 +12,7 @@ module.exports = function (grunt) {
             },
             nittro: {
                 files: {
-                    'dist/js/nittro-neon.min.js': files
+                    'dist/js/nittro-neon.min.js': files.js
                 }
             }
         },
@@ -26,13 +23,13 @@ module.exports = function (grunt) {
             },
             nettejs: {
                 files: {
-                    'dist/js/nittro-neon.js': files
+                    'dist/js/nittro-neon.js': files.js
                 }
             }
         },
 
         jasmine: {
-            src: files,
+            src: files.js,
             options: {
                 vendor: [
                     'bower_components/promiz/promiz.min.js',

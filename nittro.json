@@ -1,0 +1,8 @@
+{
+    "files": {
+        "js": [
+            "src/js/Nittro/Utils/Tokenizer.js",
+            "src/js/Nittro/Neon/Neon.js"
+        ]
+    }
+}
