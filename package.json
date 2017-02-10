@@ -2,6 +2,8 @@
     "name": "nittro-neon",
     "homepage": "https://www.nittro.org",
     "license": "MIT",
+    "version": "2.0.0-rc.2",
+    "author": "Dan Kadera <me@subsonic.cz>",
     "repository": {
         "type": "git",
         "url": "https://github.com/nittro/neon.git"
